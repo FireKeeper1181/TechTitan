@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>About Us</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+    </head>
+    
+    <body>
+        <section id="header">
+            <a href="index.html"><img src="img/Web Logo.png" class="logo" alt="" style="max-width: 300px;"></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Prebuilds.html">Our Prebuilds</a></li>
+                    <li><a class="active" href="MakeYourOwn.html">Make Your Own</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Login.html"><img src="img/Login.png" style="max-width: 60px;"></a></li>
+                    <li><a id="lg-cart" href="Cart.html"><img src="img/Cart.png" style="max-width: 55px;"></i></a></li>
+                    <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+                </ul>
+            </div>
+    
+            <div id="mobile">
+                <a href="Cart.html"><img src="img/Cart.png" style="max-width: 55px;"></i></a>
+                <img id="bar" src="img/hmburgericon.png" style="max-width: 55px;">
+            </div>
+    
+        </section>
+    
+    <section class="build-your-own-pc">
+        <h2>Build Your Own PC</h2>
+
+        <!-- CPU Section -->
+        <div class="component-section">
+            <h3>CPU</h3>
+            <ul><img src="https://miro.medium.com/v2/resize:fit:1200/0*z6DBs7FzNFcMLWiU" style="max-width:75%;">
+                <li><input type="radio" name="cpu" id="amd3" data-price="200"><label for="amd3">AMD Ryzen 3 - $200</label></li>
+                <li><input type="radio" name="cpu" id="amd5" data-price="300"><label for="amd5">AMD Ryzen 5 - $300</label></li>
+                <li><input type="radio" name="cpu" id="amd7" data-price="400"><label for="amd7">AMD Ryzen 7 - $400</label></li>
+                <li><input type="radio" name="cpu" id="amd9" data-price="500"><label for="amd9">AMD Ryzen 9 - $500</label></li>
+                <li><input type="radio" name="cpu" id="intel3" data-price="250"><label for="intel3">Intel Core i3 - $250</label></li>
+                <li><input type="radio" name="cpu" id="intel5" data-price="350"><label for="intel5">Intel Core i5 - $350</label></li>
+                <li><input type="radio" name="cpu" id="intel7" data-price="450"><label for="intel7">Intel Core i7 - $450</label></li>
+                <li><input type="radio" name="cpu" id="intel9" data-price="550"><label for="intel9">Intel Core i9 - $550</label></li>
+            </ul>
+        </div>
+
+        <!-- GPU Section -->
+        <div class="component-section">
+            <h3>GPU</h3>
+            <ul><img src="https://external-preview.redd.it/EJjujjsg8662l3aukG4rRmeddktv3S5H3VEoEX3twFw.jpg?auto=webp&s=2c428e5bfe6aa8f35f8b298201bc5df4d017b1f7" style="max-width:75%;">
+                <li><input type="radio" name="gpu" id="nvidia" data-price="300"><label for="nvidia">NVIDIA GeForce - $300</label></li>
+                <li><input type="radio" name="gpu" id="amd" data-price="250"><label for="amd">AMD Radeon - $250</label></li>
+                <li><input type="radio" name="gpu" id="intel" data-price="250"><label for="intel">Intel Arc - $250</label> </li>
+            </ul>
+        </div>
+
+        <!-- RAM Section -->
+        <div class="component-section">
+            <h3>RAM</h3>
+            <ul><img src="https://d1lss44hh2trtw.cloudfront.net/resize?type=webp&url=https%3A%2F%2Fshacknews-www.s3.amazonaws.com%2Fassets%2Farticle%2F2018%2F02%2F12%2FSelecting-the-Best-Memory-For-Your-Gaming-PC-inline-6_1200x500.JPG&width=1032&sign=cxVga08WAXMiDBFLyvbbNLtlLBHck28HHXglR3tRjAE" style="max-width:75%;"> 
+                <li><input type="radio" name="ram" id="8gb" data-price="50"><label for="8gb">8GB DDR4 - $50</label></li>
+                <li><input type="radio" name="ram" id="16gb" data-price="100"><label for="16gb">16GB DDR4 - $100</label></li>
+                <li><input type="radio" name="ram" id="32gb" data-price="200"><label for="32gb">32GB DDR4 - $200</label></li>
+            </ul>
+        </div>
+
+        <!-- Storage Section -->
+        <div class="component-section">
+            <h3>Storage</h3>
+            <ul><img src="https://www.gamepro.com.au/wp-content/uploads/2022/10/ssd-vs-hdd-for-gaming-which-is-best@2x-1381x725.jpg" style="max-width:75%;">
+                <li><input type="radio" name="storage" id="ssd" data-price="80"><label for="ssd"> 512GB SSD - $80</label></li>
+                <li><input type="radio" name="storage" id="hdd" data-price="60"><label for="hdd">1TB HDD - $60</label></li>
+            </ul>
+        </div>
+
+        <!-- PSU Section -->
+        <div class="component-section">
+            <h3>Power Supply (PSU)</h3>
+            <ul><img src="https://www.easypc.io/img/power-supply-ratings/header.jpg" style="max-width:75%;">
+                <li><input type="radio" name="psu" id="bronze" data-price="100"><label for="bronze">Bronze Certified - $100</label></li>
+                <li><input type="radio" name="psu" id="silver" data-price="120"><label for="silver">Silver Certified - $120</label></li>
+                <li><input type="radio" name="psu" id="gold" data-price="150"><label for="gold">Gold Certified - $150</label></li>
+                <li><input type="radio" name="psu" id="platinum" data-price="180"><label for="platinum">Platinum Certified - $180</label></li>
+            </ul>
+        </div>
+
+        <!-- Case Section -->
+        <div class="component-section">
+            <h3>Case</h3>
+            <ul><img src="https://voltcave.com/wp-content/uploads/2021/03/mid-tower-vs-full-tower.png" style="max-width:75%;">
+                <li><input type="radio" name="case" id="midtower" data-price="70"><label for="midtower">Mid Tower - $70</label></li>
+                <li><input type="radio" name="case" id="fulltower" data-price="100"><label for="fulltower">Full Tower - $100</label></li>
+            </ul>
+        </div>
+        
+        <h3>Total Cost: $<span id="total-cost">0</span></h3>
+    </section>
+
+    <script>
+        // Calculate the total cost when components are selected
+        const allInputs = document.querySelectorAll('input');
+        allInputs.forEach(input => {
+            input.addEventListener('change', calculateTotalCost);
+        });
+
+        function calculateTotalCost() {
+            let totalPrice = 0;
+            allInputs.forEach(input => {
+                if (input.checked) {
+                    totalPrice += parseInt(input.getAttribute('data-price'));
+                }
+            });
+
+            document.getElementById('total-cost').textContent = totalPrice;
+        }
+    </script>
+
+<body>
+    <form align="center" action="Payment.html" method="post">
+        <button class="btn" type="submit">BUY</button>
+    </form>
+</body>
+
+<button class="btn" onclick="addToCart({ name: 'Selected Product', price: 100 })">Add to Cart</button>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    #results {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #results li {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    #results li img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/Web Logo.png" class="logo" alt="" style="max-width: 300px;"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Prebuilds.html">Our Prebuilds</a></li>
+                <li><a href="MakeYourOwn.html">Make Your Own</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Login.html"><img src="img/Login.png" style="max-width: 60px;"></a></li>
+                <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="Cart.html"><img src="img/Cart.png" style="max-width: 55px;"></i></a>
+            <img id="bar" src="img/hmburgericon.png" style="max-width: 55px;">
+        </div>
+
+    </section>
+
+
+    <div class="product-list">
+        <hr color="red">
+        <div class="product">
+            <p>Price: RM10</p>
+            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            <button onclick="myFunction()">Remove</button>
+        </div>
+    </div>
+
+    <div class="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: RM<span id="cart-total">0</span></p>
+        <hr color="blue">
+    </div>
+
+    <form align="center" action="Payment.html" method="post">
+        <button class="btn" type="submit">Buy</button>
+    </form>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

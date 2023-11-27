@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTitan Computer Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    #results {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #results li {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    #results li img {
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/Web Logo.png" class="logo" alt="" style="max-width: 300px;"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Prebuilds.html">Our Prebuilds</a></li>
+                <li><a href="MakeYourOwn.html">Make Your Own</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Login.html"><img src="img/Login.png" style="max-width: 60px;"></a></li>
+                <li><a id="lg-cart" href="Cart.html"><img src="img/Cart.png" style="max-width: 55px;"></i>0</a></li>
+                <a href="#" id="close"><img src="img/close.png" style="max-width: 25px;"></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="Cart.html"><img src="img/Cart.png" style="max-width: 55px;"></i></a>
+            <img id="bar" src="img/hmburgericon.png" style="max-width: 55px;">
+        </div>
+
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-header">
+        <div class="search-bar">
+            <input type="search" id="searchInput" placeholder="Search for products">
+            <div class="autocom-box">
+                <li>$899.99 </li>
+                <li>$2599.99 </li>
+                <li>$999.99 </li>
+                <li>$799.99 </li>
+                <li>The Champion </li>
+                <li>Ascended </li>
+                <li>Neon Mint </li>
+                <li>Arcade Ocean </li>
+            </div>
+            <button onclick="searchProducts()"><img src="img/search.png"
+                    style="max-width: 20px; cursor: pointer;"></button>
+        </div>
+    </section>
+
+    <ul id="results"></ul>
+
+
+    <section id="hero">
+        <h4>LIMITED TIME DEALS</h4>
+        <h2>ON OUR PREBUILDS</h2>
+        <h1>NOVEMBER SALES!!!</h1>
+        <p>Prebuilds with up to 50% Off!</p>
+        <button id="Buy-Now"><a href="Prebuilds.html">Buy Now</a></button>
+    </section>
+
+    <section id="fe-pro" class="section-p1" style="text-align: center;">
+        <h2 style="text-align: center;">Featured Products</h2>
+        <div class="fe-box">
+            <a href="PC-The Champion.html"><img src="img/PCs/PC-The Champion.jpeg" class="product-image"></a>
+            <h3><a Class="fe-box" href="PC-The Champion.html">The Champion</a></h3>
+            <p>
+                <li>Ryzen 5 5600G</li>
+                <li>RTX 3060 Ti</li>
+                <li>32GB RAM</li>
+                <li>1TB SSD</li>
+            </p>
+            <p class="pricetag">Price: $999.99</p>
+        </div>
+
+        <div class="fe-box">
+            <a href="PC-Neo Ninja.html"><img src="img/PCs/PC-Neo Ninja.jpg" class="product-image"></a>
+            <h3><a Class="fe-box" href="PC-Neo Ninja.html">Neo Ninja</a></h3>
+            <p>
+                <li>Ryzen 7 5800X</li>
+                <li>RTX 3080</li>
+                <li>32GB RAM</li>
+                <li>512GB NVMe SSD</li>
+            </p>
+            <p class="pricetag">Price: $799.99</p>
+        </div>
+
+        <div class="fe-box">
+            <a href="PC-Morning Phantom.html"><img src="img/PCs/PC-Morning Phantom.jpg" class="product-image"></a>
+            <h3><a Class="fe-box" href="PC-Morning Phantom.html">Morning Phantom</a></h3>
+            <p>
+                <li>Ryzen 3 7600F</li>
+                <li>GTX 1660 Super</li>
+                <li>32GB RAM</li>
+                <li>256GB SSD + 1TB HDD</li>
+            </p>
+            <p class="pricetag">Price: $799.99</p>
+        </div>
+
+        <div class="fe-box">
+            <a href="PC-Retro Revolver.html"><img src="img/PCs/PC-Retro Revolver.jpeg" class="product-image"></a>
+            <h3><a Class="fe-box" href="PC-Retro Revolver.html">Retro Revolver</a></h3>
+            <p>
+                <li>i5-10400F</li>
+                <li>GTX 1650</li>
+                <li>16GB RAM</li>
+                <li>512GB SSD</li>
+            </p>
+            <p class="pricetag">Price: $799.99</p>
+        </div>
+
+    </section>
+
+    <section id="slide-section">
+        <!-- Image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio button starts-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!--slide images-->
+                <div class="slide first">
+                    <img src="img/slideshow/slide 0.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/slideshow/slide 1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/slideshow/slide 2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/slideshow/slide 3.jpeg">
+                </div>
+
+                <!--Auto Slide-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <!--Manual Slide-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        <!-- Image slider end-->
+    </section>
+
+    <footer id="footr" class="section-p1" style="justify-content: center;" ;>
+        <div class="column">
+            <img src="img/Web Logo.png" style="max-width: 200px;">
+            <h4 class="foot">Contact Us</h4>
+            <img src="img/Address (2).png" style="max-width: 25px;">
+            <Address>135, Jln Sentral 24, Taman Nusa Sentral, 79100 Johor Bahru, Johor</Address>
+            <p class="foot"><img src="img/PhoneNo.png" style="max-width: 25px;"> 07-535 3359</p>
+            <div>
+                <h4 class="foot">Follow Us</h4>
+                <div>
+                    <a href="https://www.facebook.com"><img class="socmed" src="img/socmed/fb.png"></a>
+                    <a href="https://www.instagram.com"><img class="socmed" src="img/socmed/insta.png"></a>
+                    <a href="https://www.tiktok.com"><img class="socmed" src="img/socmed/tiktok.png"></a>
+                    <a href="https://www.twitter.com"><img class="socmed" src="img/socmed/twt.png"></a>
+                    <a href="https://www.pinterest.com"><img class="socmed" src="img/socmed/pinterest.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript">
+        const products = [
+            {
+                id: 1,
+                image: 'img/PCs/PC-The Champion.jpeg',
+                title: "The Champion",
+                price: '$999.99',
+                url: 'PC-The Champion.html'
+            },
+            {
+                id: 2,
+                image: 'img/PCs/PC-Neo Ninja.jpg',
+                title: 'Neo Ninja',
+                price: '$1299.99',
+                url: 'PC-Neo Ninja.html'
+            },
+            {
+                id: 3,
+                image: 'img/PCs/PC-Morning Phantom.jpg',
+                title: 'Morning Phantom',
+                price: '$799.99',
+                url: 'PC-Morning Phantom.html'
+            },
+            {
+                id: 4,
+                image: 'img/PCs/PC-Retro Revolver.jpeg',
+                title: 'Retro Revolver',
+                price: '$799.99',
+                url: 'PC-Retro Revolver.html'
+            },
+            {
+                id: 5,
+                image: 'img/PCs/PC-Spectre.jpg',
+                title: 'Spectre',
+                price: '$1,199.99',
+                url: 'PC-Spectre.html'
+            },
+            {
+                id: 6,
+                image: 'img/PCs/PC-Ascended.jpeg',
+                title: 'Ascended',
+                price: '$2599.99',
+                url: 'PC-Ascended.html'
+            },
+            {
+                id: 7,
+                image: 'img/PCs/PC-Iron Knight.jpg',
+                title: 'Iron Knight',
+                price: '$1,499.99',
+                url: 'PC-Iron Knight.html'
+            },
+            {
+                id: 8,
+                image: 'img/PCs/PC-Arcade Ocean.jpg',
+                title: 'Arcade Ocean',
+                price: '$899.99',
+                url: 'PC-Arcade Ocean.html'
+            },
+            {
+                id: 9,
+                image: 'img/PCs/PC-Neon Mint.jpg',
+                title: 'Neon Mint',
+                price: '$1,699.99',
+                url: 'PC-Neon Mint.html'
+            },
+            {
+                id: 10,
+                image: 'img/PCs/PC-Deadlock.jpeg',
+                title: 'Deadlock',
+                price: '$2299.99',
+                url: 'PC-Deadlock.html'
+            }
+        ];
+
+        function searchProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+
+            const matchingProducts = products.filter(product => {
+                const productNameMatches = product.title.toLowerCase().includes(searchInput);
+                const productPriceMatches = product.price.toLowerCase().includes(searchInput);
+                return productNameMatches || productPriceMatches;
+            });
+
+            if (matchingProducts.length === 0) {
+                const noResultsItem = document.createElement('li');
+                noResultsItem.textContent = 'No matching products found.';
+                resultsContainer.appendChild(noResultsItem);
+            } else {
+                matchingProducts.forEach(product => {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <img src="${product.image}" alt="${product.title}">
+                        <a href="${product.url}">
+                            <span>${product.title}</span>
+                        </a>
+                        <span>${product.price}</span>
+                    `;
+                    resultsContainer.appendChild(listItem);
+                });
+            }
+        }
+
+        // Add click event handler to navigate to "Prebuilds.html"
+        document.getElementById('results').addEventListener('click', function (event) {
+            const clickedElement = event.target.closest('a');
+
+            // Check if the clicked element is an anchor tag
+            if (clickedElement) {
+                // Prevent the default behavior (following the link) to handle it manually
+                event.preventDefault();
+
+                // Now you can use window.location.href to navigate to "Prebuilds.html"
+                window.location.href = 'Prebuilds.html';
+            }
+        });
+
+
+        function searchProduct(products, searchQuery) {
+            return products.filter(product => product.title.toLowerCase().includes(searchQuery.toLowerCase()))
+                .map(product => {
+                    return {
+                        product: product,
+                        url: product.url
+                    };
+                });
+        }
+
+
+        const searchResult = searchProduct(products, "champion");
+        console.log(searchResult);
+
+
+        // Auto Slideshow
+        var counter = 3;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+
+
+        //Suggestions, getting all required elements
+        const searchWrapper = document.querySelector(".search-bar");
+        const inputBox = searchWrapper.querySelector("input");
+        const suggBox = searchWrapper.querySelector(".autocom-box");
+
+        //if user press any key and release
+        inputBox.onkeyup = (e) => {
+            let userData = e.target.value; // user entered data
+            let emptyArray = [];
+            if (userData) {
+                emptyArray = suggestions.filter((data) => {
+                    return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+                });
+                emptyArray = emptyArray.map((data) => {
+                    return data = '<li>' + +'</li>';
+                })
+                console.log(emptyArray);
+                searchWrapper.classList.add("active");
+                showSuggestions(emptyArray);
+                let allList = suggBox.querySelectorAll("li");
+                for (let i = 0; i < allList.length; i++) {
+                    allList[i].setAttribute("onclick", "select(this)");
+                }
+            } else {
+                searchWrapper.classList.remove("active");
+            }
+        }
+
+        function select(element) {
+            let selectUserData = element.textcontent;
+            inputBox.value = selectUserData;
+            searchWrapper.classList.remove("active");
+        }
+
+        function showSuggestions(list) {
+            let listData;
+            if (!list.length) {
+                userValue = inputBox.value;
+                listData = '<li>' + userValue + '</li>';
+            } else {
+                listData = list.join('');
+            }
+            suggBox.innerHTML = listData;
+        }
+
+        let suggestions = [
+            "$899.99",
+            "$2599.99",
+            "$999.99",
+            "$799.99",
+            "The Champion",
+            "Ascended",
+            "Neon Mint",
+            "Arcade Ocean"
+        ]
+    </script>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="suggestions.js"></script>
+</body>
+
+</html>
